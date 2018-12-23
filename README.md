@@ -5,7 +5,7 @@
 
 #### Function
 - Open/Save/Save As
-- Copy/Cut/Pate/Delete
+- Copy/Cut/Paste/Delete
 - Replace/Search
 
 #### Feature
@@ -19,6 +19,9 @@
 
 #### Run
 - [Main class](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/Main.java)
+
+#### Scrennshot
+- ![image](https://github.com/zjs1224522500/Notepad/blob/master/Notepad.png)
 
 #### Reference
 - [[1] Github hyne-shan : Notepad](https://github.com/hyne-shan/NotePad)

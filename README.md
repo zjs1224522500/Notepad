@@ -22,7 +22,7 @@ public class StaticMenuItemFactory extends AbstractMenuItemFactory {
 - [[2] Used in Maker for popup menu](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/maker/ApplicationMenuMaker.java#L46)
 
 #### 单例模式
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/factory/FactoryProducer.java#L16-L33)
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/factory/FactoryProducer.java#L16-L33)
 ```Java
     public static AbstractMenuItemFactory getFactory(String type) {
         /**
@@ -45,7 +45,7 @@ public class StaticMenuItemFactory extends AbstractMenuItemFactory {
     }
 ```
 #### 门面模式（外观模式）
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/maker/ApplicationMenuMaker.java#L29-L51)
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/maker/ApplicationMenuMaker.java#L29-L51)
 ```Java
     /**
      * 外观模式
@@ -72,8 +72,8 @@ public class StaticMenuItemFactory extends AbstractMenuItemFactory {
     }
 ```
 #### 迭代器模式
-- Define
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/iterator/impl/MenuItemNamesRepo.java#L26-L48)
+##### Define
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/iterator/impl/MenuItemNamesRepo.java#L26-L48)
 ```Java
     @Override
     public Iterator getIterator() {
@@ -100,8 +100,8 @@ public class StaticMenuItemFactory extends AbstractMenuItemFactory {
         }
     }
 ```
-- Use
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/maker/ApplicationMenuMaker.java#L70-L85)
+##### Use
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/maker/ApplicationMenuMaker.java#L70-L85)
 ```Java
     /**
      * 迭代器模式
@@ -121,8 +121,8 @@ public class StaticMenuItemFactory extends AbstractMenuItemFactory {
     }
 ```
 #### 模板模式
-- Define
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/demo/GUIApplication.java#L6-L21)
+##### Define
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/demo/GUIApplication.java#L6-L21)
 ```Java
 /**
  * 模板模式
@@ -142,18 +142,18 @@ public abstract class GUIApplication extends JFrame implements ActionListener {
     }
 }
 ```
-- Implementation
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/demo/impl/NotepadDemo.java#L26-L88)
+##### Implementation
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/demo/impl/NotepadDemo.java#L26-L88)
 
 #### 命令模式
-- Define
-[Command Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/command/IOperationCommand.java#L6-L9)
+##### Define
+- [Command Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/command/IOperationCommand.java#L6-L9)
 ```Java
 public interface IOperationCommand {
     void execute() throws IOException, UnsupportedFlavorException;
 }
 ```
-[Broker Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/command/Broker.java#L8-L28)
+- [Broker Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/command/Broker.java#L8-L28)
 ```Java
 /**
  * 命令模式
@@ -178,8 +178,8 @@ public class Broker {
     }
 }
 ```
-- Implementation e.g.
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/command/CopyCommand.java#L8-L25)
+##### Implementation e.g.
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/command/CopyCommand.java#L8-L25)
 ```Java
 public class CopyCommand implements IOperationCommand {
 
@@ -201,8 +201,8 @@ public class CopyCommand implements IOperationCommand {
 }
 ```
 
-- Use
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/demo/impl/NotepadDemo.java#L94-L122)
+##### Use
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/demo/impl/NotepadDemo.java#L94-L122)
 ```Java
             switch (e.getActionCommand()) {
                 case CREATE:

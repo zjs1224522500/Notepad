@@ -1,5 +1,26 @@
 #### 工厂模式
-[Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/factory/FactoryProducer.java#L16-L33)
+##### Define
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/factory/AbstractMenuItemFactory.java)
+```Java
+public abstract class AbstractMenuItemFactory {
+    public abstract JMenuItem createJMenuItem(String name);
+}
+```
+##### Implementation
+- [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/factory/impl/StaticMenuItemFactory.java)
+```Java
+public class StaticMenuItemFactory extends AbstractMenuItemFactory {
+    @Override
+    public JMenuItem createJMenuItem(String name) {
+        return new StaticMenuItem(name);
+    }
+}
+```
+
+##### Use
+- [[1] Used in Maker for static menu](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/maker/ApplicationMenuMaker.java#L80)
+- [[2] Used in Maker for popup menu](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/maker/ApplicationMenuMaker.java#L46)
+
 #### 单例模式
 [Source Code](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/factory/FactoryProducer.java#L16-L33)
 ```Java

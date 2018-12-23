@@ -17,6 +17,9 @@
 - [Template Pattern](https://github.com/zjs1224522500/Notepad/blob/master/DesignPattern.md#%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F)
 - [Command Pattern](https://github.com/zjs1224522500/Notepad/blob/master/DesignPattern.md#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F)
 
+#### Run
+- [Main class](https://github.com/zjs1224522500/Notepad/blob/master/src/com/demo/design/pattern/Main.java)
+
 #### Reference
 - [[1] Github hyne-shan : Notepad](https://github.com/hyne-shan/NotePad)
 - [[2] Runoob : Design Patterns](http://www.runoob.com/design-pattern/command-pattern.html)
